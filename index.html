@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    
+    *{
+        font-size: 80px;
+    }
+    </style>
+</head>
+<body>
+    <div id="chain" class="fa"></div>
+    <br>
+    <br>
+    <br>
+    <div id="battery" class="fa" ></div>
+    <br>
+    <br>
+    <br>
+    <div id="hourglass" class="fa" ></div>
+    
+    <br>
+    <br>
+    <br>
+    <div id="rockScissor" class="fa" ></div>
+    <br>
+    <br>
+    <br>
+    <div id="circles" class="fa" ></div>
+    <script>
+        
+        function brakeChain(){
+            let chain = document.getElementById('chain');
+            chain.innerHTML = "&#xf0c1";
+
+            setTimeout(function(){
+                chain.innerHTML = "&#xf127;"
+            }, 1000);
+        }
+
+        brakeChain();
+
+        setInterval(brakeChain, 2000);
+
+
+        //Batttery Charge Animation
+        function batteryChange(){
+            let battery = document.getElementById('battery');
+            battery.innerHTML = "&#xf244";
+            setTimeout(function(){
+                battery.innerHTML = "&#xf243";
+            }, 1000);
+            setTimeout(function(){
+                battery.innerHTML = "&#xf242";
+            }, 2000);
+            setTimeout(function(){
+                battery.innerHTML = "&#xf241";
+            }, 3000);
+            setTimeout(function(){
+                battery.innerHTML = "&#xf240";
+            }, 4000);
+
+        }
+        
+        batteryChange();
+
+        setInterval(batteryChange, 5000);
+
+
+        //hourglass Change Animation
+        function hourglass(){
+            let hourglass = document.getElementById('hourglass');
+            hourglass.innerHTML = "&#xf251";
+            setTimeout(function(){
+                hourglass.innerHTML = "&#xf252";
+            }, 1000);
+            setTimeout(function(){
+                hourglass.innerHTML = "&#xf253";
+            }, 2000);
+        }
+        
+        hourglass();
+
+        setInterval(hourglass, 3000);
+
+        //rockScissor
+        function rockScissor(){
+            let rockScissor = document.getElementById('rockScissor');
+            rockScissor.innerHTML = "&#xf255";
+            setTimeout(function(){
+                rockScissor.innerHTML = "&#xf257";
+            }, 1000);
+            setTimeout(function(){
+                rockScissor.innerHTML = "&#xf256";
+            }, 2000);
+        }
+
+        rockScissor();
+
+        setInterval(rockScissor, 3000);
+
+        // circles animation
+
+        function circles(){
+            let circles = document.getElementById('circles');
+            circles.innerHTML = "&#xf2a1";
+            setTimeout(function(){
+                circles.innerHTML = "&#xf257";
+            }, 1000);
+            setTimeout(function(){
+                circles.innerHTML = "&#xf256";
+            }, 2000);
+        }
+
+        circles();
+
+        setInterval(circles, 3000);
+
+    </script>
+
+
+
+
+ <script>
+     //leters, numbers, underscore, dollar sign
+
+ </script>   
+</body>
+</html>
